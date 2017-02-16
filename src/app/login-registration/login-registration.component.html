@@ -1,0 +1,21 @@
+<p>
+  login-registration works!
+</p>
+<div>
+  <mdl-textfield class="input-login" type="text" label="Email" [(ngModel)]="email" floating-label name="email"></mdl-textfield>
+  <mdl-textfield class="input-login" type="password" label="Password" [(ngModel)]="password" floating-label name="password"></mdl-textfield>
+  <button mdl-button mdl-button-type="raised" mdl-ripple class="customized-button-login" (click)="registerNewUser(email, password)">Register</button>
+</div>
+<div>
+  <mdl-textfield class="input-login" type="text" label="Email" [(ngModel)]="email" floating-label name="email"></mdl-textfield>
+  <mdl-textfield class="input-login" type="password" label="Password" [(ngModel)]="password" floating-label name="password"></mdl-textfield>
+  <button mdl-button mdl-button-type="raised" mdl-ripple class="customized-button-login" (click)="login(email, password)">LogIn</button>
+</div>
+
+<div>
+  <mdl-textfield class="input-login" type="text" label="Email" [(ngModel)]="email" floating-label name="email"></mdl-textfield>
+  <button mdl-button mdl-button-type="raised" mdl-ripple class="customized-button-login" (click)="resetPassword(email)">ResetPassword</button>
+</div>
+<div>
+  <button mdl-button mdl-button-type="raised" mdl-ripple class="customized-button-login" (click)="loginGoogle()">Login with Google</button>
+</div>

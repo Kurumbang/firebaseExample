@@ -1,0 +1,15 @@
+<p>
+  home works!
+</p>
+
+<div>
+  <mdl-textfield label="Text..." [(ngModel)]="status" rows="3" maxrows="3" floating-label></mdl-textfield>
+  <button mdl-button mdl-button-type="raised" mdl-ripple class="customized-button-login" (click)="post(status)">Post</button>
+</div>
+
+
+<button mdl-button mdl-button-type="raised" mdl-ripple class="customized-button-login" (click)="logout()">LogOut</button>
+<mdl-textfield class="input-login" type="password" label="ChangePassword" [(ngModel)]="changePassword" floating-label name="changePassword"></mdl-textfield>
+<button mdl-button mdl-button-type="raised" mdl-ripple class="customized-button-login" (click)="updatePassword(changePassword)">Update Password</button>
+
+<div *ngFor="let post of posts">{{post.description}}</div>
